@@ -14,7 +14,7 @@ A ideia é ser um aplicativo parecido com o [Mobalytics.lor](https://app.mobalyt
 
 | REQUISITO | DESCRIÇÃO | AUTOR|
 | --------- | --------- | ---- |
-|RF01 - Cadastro do usuário | O usuário pode ou não se cadastrar no sistema, sem o cadastro ele não poderá criar decks, ou acessar alguns áreas do sistema.| ADM / USER
+|RF01 - Cadastro do usuário | O usuário pode ou não se cadastrar no sistema, sem o cadastro ele não poderá criar decks, ou acessar alguns áreas do sistema.| ADM / VISIT
 |RF02 - Atualizar cadastro do usuário | O sistema deve permitir que o usuário possa alterar seus dados no cadastro, como mudança de senha, email, username.| ADM / USER|
 |RF03 - Visualizar informações do cadastro do usuário | O sistema deve permitir que o usuário ou o administrador veja as informações (id, username, email, plano) que estão presentes no cadastro do usuário, ele não poderá vê a senha.| ADM / USER|
 |RF04 - Deletar cadastro do usuário | O sistema deve permitir que um usuário seja deletado, soft delete, mas só o administrador poderá efetuar essa deleção.| ADM |
@@ -27,7 +27,17 @@ A ideia é ser um aplicativo parecido com o [Mobalytics.lor](https://app.mobalyt
 | RF11 - Filtro de decks |  O sistema deve conter um menu que exiba várias opções de filtro, para facilitar a busca feita por um usuário a um deck. | ADM / USER / VISIT |
 | RF11 - Campo para pesquisa de cartas | O sistema deve conter um campo de pesquisa, para facilitar a busca por uma cartar. | ADM / USER / VISIT |
 | RF12 - Tier List | O sistema deve conter um Tier List, onde será possível verificar os Tier dos decks, onde decks rank será exibido por rank S,A,B e C. | ADM / USER / VISIT |
+... em construção!
 
 ## Requisitos não funcionais:
+... em construção!
 ## Regras de negócio:
+* O usuário só poderá editar os decks criados por ele, não podendo editar decks feitos por outros usuários.
+* O usuário só poderá deletar os decks criados por ele, não podendo deletar decks feitos por outros usuários.
+* Em casos especiais, pedido de deleção de conta feita pelo próprio usuário ou quebra nas regras do sistema, um administrador pode deletar um usuário.
+* Usuários deletados por um administrador seus decks criados permanecem na disponíveis para a comunidade.
+... em construção!
 
+## Modelagem dos dados:
+* modelo inicial:
+![modelo](./img/modelo_dados.png)
