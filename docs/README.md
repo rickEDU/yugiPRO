@@ -36,8 +36,9 @@ A ideia é ser um aplicativo parecido com o [Mobalytics.lor](https://app.mobalyt
 * O usuário só poderá deletar os decks criados por ele, não podendo deletar decks feitos por outros usuários.
 * Em casos especiais, pedido de deleção de conta feita pelo próprio usuário ou quebra nas regras do sistema, um administrador pode deletar um usuário.
 * Usuários deletados por um administrador seus decks criados permanecem na disponíveis para a comunidade.
+<br/>
 ... em construção!
 
 ## Modelagem dos dados:
 * modelo inicial:
-![modelo](./img/modelo_dados.png)
+![](./img/modelo_dados.png)
