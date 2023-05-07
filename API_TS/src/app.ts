@@ -4,8 +4,6 @@ import cookieParser from 'cookie-parser';
 import { router } from './route/router';
 import { urlencoded } from 'body-parser';
 
-
-
 export class App{
     
     public server: express.Application;
